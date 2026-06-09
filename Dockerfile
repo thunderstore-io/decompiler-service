@@ -8,7 +8,7 @@ RUN \
     rm packages-microsoft-prod.deb && \
     apt update && \
     apt install -y dotnet-sdk-8.0 && \
-    dotnet tool install ilspycmd -g && \
+    dotnet tool install ilspycmd -g --version 9.1.0.7988 && \
     rm -rf /var/lib/apt/lists/*
 
 ENV PYTHONUNBUFFERED 1
